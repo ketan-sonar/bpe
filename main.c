@@ -12,20 +12,20 @@
 #define min(a, b) ((a < b) ? a : b)
 
 #define swap(Type, a, b) \
-    do { \
-        Type temp = a; \
-        a = b; \
-        b = temp; \
+    do {                 \
+        Type temp = a;   \
+        a = b;           \
+        b = temp;        \
     } while (false)
 
-#define da_append(xs, x) \
-    do { \
-        if ((xs).count >= (xs).capacity) { \
-            if ((xs).capacity == 0) (xs).capacity = 256; \
-            else (xs).capacity *= 2; \
+#define da_append(xs, x)                                                           \
+    do {                                                                           \
+        if ((xs).count >= (xs).capacity) {                                         \
+            if ((xs).capacity == 0) (xs).capacity = 256;                           \
+            else (xs).capacity *= 2;                                               \
             (xs).items = realloc((xs).items, (xs).capacity * sizeof(*(xs).items)); \
-        } \
-        (xs).items[(xs).count++] = (x); \
+        }                                                                          \
+        (xs).items[(xs).count++] = (x);                                            \
     } while (false)
 
 typedef uint32_t Token;
