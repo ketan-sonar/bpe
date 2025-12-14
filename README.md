@@ -1,6 +1,6 @@
 # bpe
 
-A small prototype of one of the commonly-used tokenization called [Byte-Pair Encoding](https://en.wikipedia.org/wiki/Byte-pair_encoding) in C.
+A small prototype of one of the commonly-used tokenization algorithm called [Byte-Pair Encoding](https://en.wikipedia.org/wiki/Byte-pair_encoding) in C.
 
 ## Usage
 
